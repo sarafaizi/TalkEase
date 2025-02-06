@@ -1,4 +1,6 @@
 import { View, Text } from "react-native";
+import { Message } from "./Message/Message";
+import { MessageList } from "./MessageList/MessageList";
 
 export default function App() {
   return (
@@ -9,7 +11,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>Universal React with Expo</Text>
+      <MessageList />
     </View>
   );
 }
