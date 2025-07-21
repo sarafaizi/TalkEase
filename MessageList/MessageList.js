@@ -3,13 +3,13 @@ import React from 'react';
 import { faker } from '@faker-js/faker';
 import { Message } from '../Message/Message';
 
-// Rastgele veri oluşturma
+
 const Data = Array(30).fill(null).map(() => ({
-    id: faker.string.uuid(), // Benzersiz ID
-    avatar: faker.image.avatar(), // Profil resmi
-    name: faker.person.fullName(), // Tam ad
-    message: faker.lorem.sentence(), // Rastgele cümle
-    news: faker.number.int({ min: 0, max: 10 }), // 0 ile 4 arasında rastgele bir sayı
+    id: faker.string.uuid(), 
+    avatar: faker.image.avatar(), 
+    name: faker.person.fullName(),
+    message: faker.lorem.sentence(),
+    news: faker.number.int({ min: 0, max: 10 }),
     online: faker.datatype.boolean(),
 }));
 
